@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","14473","Testing episodes presenting on HIM dashboard and validating UI with API -- @1.2 ","","Fri Jul 04 15:44:01 IST 2025","passed","Fri Jul 04 15:44:15 IST 2025","","","",""
+"","14461","Testing episodes presenting on HIM dashboard and validating UI with API -- @1.2 ","","Fri Jul 04 15:16:00 IST 2025","passed","Fri Jul 04 15:16:14 IST 2025","","","",""
+"","14475","Testing episodes presenting on HIM dashboard and validating UI with API -- @1.3 ","","Fri Jul 04 15:44:15 IST 2025","passed","Fri Jul 04 15:44:30 IST 2025","","","",""
+"","11042","Tesing default episodes presenting on HIM dashboard and validating UI with total number of episodes","","Fri Jul 04 15:43:44 IST 2025","passed","Fri Jul 04 15:43:55 IST 2025","","","",""
+"","5291","Testing episodes presenting on HIM dashboard and validating UI with API -- @1.1 ","","Fri Jul 04 15:43:55 IST 2025","broken","Fri Jul 04 15:44:01 IST 2025","","","",""
+"","14402","Testing episodes presenting on HIM dashboard and validating UI with API -- @1.3 ","","Fri Jul 04 15:16:14 IST 2025","passed","Fri Jul 04 15:16:29 IST 2025","","","",""
+"","14455","Testing episodes presenting on HIM dashboard and validating UI with API -- @1.1 ","","Fri Jul 04 15:15:45 IST 2025","passed","Fri Jul 04 15:16:00 IST 2025","","","",""

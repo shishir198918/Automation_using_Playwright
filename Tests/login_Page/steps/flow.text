@@ -1,0 +1,43 @@
+                    ┌─────────────────────────────────────────────┐
+                    │                Behave CLI                   │
+                    └─────────────────────────────────────────────┘
+                                      │
+                                      ▼
+                     ┌───────────────────────────────────┐
+                     │   Step Definitions / Hooks (sync) │
+                     └───────────────────────────────────┘
+                                      │
+        ┌─────────────────────────────┴──────────────────────────────┐
+        │                                                            │
+        ▼                                                            ▼
+┌────────────────────┐                              ┌──────────────────────────┐
+│ Calls event loop:  │                              │  Access context variable │
+│ context.loop =     │                              │  (stores browser/page)  │
+│ asyncio.get_event_loop()                         │
+└────────┬───────────┘                              └──────────────────────────┘
+         │
+         ▼
+┌───────────────────────────────────────────────────────────┐
+│ Use loop.run_until_complete(async_function())             │
+│ to execute Playwright async APIs like:                    │
+│   - async_playwright().start()                            │
+│   - browser.launch()                                      │
+│   - context.new_context()                                 │
+│   - context.new_page()                                    │
+└───────────────────────────────────────────────────────────┘
+         │
+         ▼
+┌──────────────────────────────────────────────┐
+│  Save all returned objects into context:     │
+│     context.playwright                       │
+│     context.browser                          │
+│     context.context (browser context)        │
+│     context.page (tab/page object)           │
+└──────────────────────────────────────────────┘
+         │
+         ▼
+┌─────────────────────────────────────┐
+│ Behave steps can now use context.   │
+│ Example:                            │
+│   context.page.goto(url)           │
+└─────────────────────────────────────┘
